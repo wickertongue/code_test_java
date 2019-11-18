@@ -1,9 +1,21 @@
 package com.codetest.experiment.code_test_java.models;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "products")
 public class Product {
 
     // properties
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "price")
     private int price;
 
     // constructor
