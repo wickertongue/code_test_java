@@ -24,6 +24,9 @@ public class Product {
         this.price = price;
     }
 
+    public Product() {
+    }
+
     // getters & setters
     public String getName() {
         return name;
